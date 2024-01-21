@@ -73,7 +73,7 @@ body {
 .form.login
   header {
   color: #1d1d1d;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .wrapper.active
   .form.login
@@ -83,7 +83,7 @@ body {
 .wrapper.active
   .signup
   header {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .wrapper
   form {
@@ -140,8 +140,8 @@ form
 }
 .checkbox
   input[type="checkbox"] {
-  height: 16px;
-  width: 16px;
+  height: 14px;
+  width: 14px;
   accent-color: #fff;
   cursor: pointer;
 }
@@ -160,20 +160,24 @@ form
   text-decoration: underline;
 }
 form
-  input[type="submit"] {
+  button[type="submit"] {
   margin-top: 15px;
-  padding: none;
+  padding: 8px;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
   color: white;
-  background: linear-gradient(to bottom, #175d69 23%, #330c43 95%)
+  background: black;
+  border-radius: 12px;
 }
 .form.login
-  input[type="submit"] {
-  background: linear-gradient(to bottom, #175d69 23%, #330c43 95%);
+  button[type="submit"] {
+  background:black;
   color: #fff;
   border: none;
+  padding: 8px;
+  background: black;
+  border-radius: 12px;
 }
 
 @media screen and (max-width: 1023px) {

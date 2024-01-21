@@ -12,6 +12,7 @@ body {
   height: 100vh;
   width: 100%;
   background: white;
+  overflow-x: hidden;
 }
 
 .header {
@@ -494,12 +495,12 @@ body {
 
 /* Sidebar */
 .sidebar {
-  position: fixed;
+  position:absolute;
   top: 0;
   right: 0;
   height: 100%;
-  width: 270px;
-  background: #fff;
+  width: 250px;
+  background: #f9f9f9;
   padding: 15px 10px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease;
@@ -602,8 +603,8 @@ body {
 
 .sidebar_profile {
   padding-top: 15px;
-  margin-top: 15px;
-  gap: 15px;
+  margin-top: 1px;
+  gap: 12px;
   border-top: 4px solid rgba(0, 0, 0, 0.473);
 }
 .sidebar_profile .name {
@@ -611,7 +612,7 @@ body {
   color: #333;
 }
 .sidebar_profile .email {
-  font-size: 15px;
+  font-size: 5px;
   color: #333;
 }
 
