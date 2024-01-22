@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Career Ease | Home</title>
     <link rel="stylesheet" href="home.css" />
+    <link rel="icon" href="" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js" integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -13,16 +14,11 @@
     <header class="header">
       <nav class="navbar">
         <h2 class="logo">
-            <a href="#">Career Ease</a>
+            <a href="../home/home.html">Career Ease</a>
         </h2>
-        <input type="checkbox" id="menu-toggle" />
-        <label for="menu-toggle" id="hamburger-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-            <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-        </label>
+        
         <ul class="links">
-          <li><a href="#">Home</a></li>
+          <li><a href="../home/home.html">Home</a></li>
           <li><a href="#">Jobs</a></li>
           <li><a href="#">Resume </a></li>
           <li><a href="#">Interview</a></li>
@@ -55,10 +51,10 @@
         <span class="nav_image">
           <button style="height: 40px;background-color: rgb(170, 187, 244); width: 40px;border-radius: 50%;"> N </button>
         </span>
-        <span class="logo_name">Neha Sinha</span>
+        <a href="../manageaccount/account.html" class="logo_name" style="font-weight: 800;">John Doe </a>
         <i class="bx bx-lock-alt" id="lock-icon" title="Unlock Sidebar"></i>
         <i class="bx bx-x" id="sidebar-close"></i>
-      </div>
+      </div><br><hr>
 
       <div class="menu_container">
         <div class="menu_items">
@@ -68,7 +64,7 @@
               <span class="line"></span>
             </div>
             <li class="item">
-              <a href="#" class="link flex">
+              <a href="./home.html" class="link flex">
                 <i class="bx bx-home-alt"></i>
                 <span>Overview</span>
               </a>
@@ -80,9 +76,15 @@
               </a>
             </li>
             <li class="item">
-              <a href="#" class="link flex">
-                <i class="fa-solid fa-trophy"></i>
-                <span>Leaderboard</span>
+              <a href="../notifications/notification.html" class="link flex">
+                <i class="fa-solid fa-bell"></i>
+                <span>Notifications</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="../settings/settings.html" class="link flex">
+                <i class="bx bx-cog"></i>
+                <span>Settings</span>
               </a>
             </li>
           </ul>
@@ -99,7 +101,7 @@
               </a>
             </li>
             <li class="item">
-              <a href="#" class="link flex">
+              <a href="#preferences" class="link flex">
                 <i class="bx bx-folder"></i>
                 <span>Edit Preferences</span>
               </a>
@@ -113,8 +115,8 @@
             </div>
             
             <li class="item">
-              <a href="#" class="link flex">
-                <i class="bx bx-cog"></i>
+              <a href="../manageaccount/account.html" class="link flex">
+                <i class="fa-solid fa-user"></i>
                 <span>Manage Account</span>
               </a>
             </li>
@@ -124,12 +126,7 @@
                 <span>Logout</span>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="link flex">
-                <i class="fa-solid fa-info"></i>
-                <span>Help Center</span>
-              </a>
-            </li>
+            
           </ul>
         </div>
 
@@ -142,7 +139,7 @@
 
 <!-- SLIDER -->
 
-<div class="slider">
+<div class="slider" id="preferences">
   <h2 style="font-size: 1.9rem;">Your Preferences</h2>
     <div class="wrapper">
       <div class="icon"><i id="left" class="fa-solid fa-arrow-left"></i></div>
@@ -236,11 +233,11 @@
 
   <div class="box">
     <i class="fas fa-quote-left quote"></i>
-    <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
+    <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p><br>
     <div class="content">
       <div class="info">
         <div class="name">Alex Smith</div>
-        <div class="job">Designer | Developer</div>
+        <div class="job" style="margin-top: 5px;">Designer | Developer</div><br>
         <div class="stars">
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
@@ -249,18 +246,16 @@
           <i class="far fa-star"></i>
         </div>
       </div>
-      <div class="image">
-        <img src="images/profile-1.jpeg" alt="">
-      </div>
+      
     </div>
   </div>
   <div class="box">
     <i class="fas fa-quote-left quote"></i>
-    <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
+    <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p><br>
     <div class="content">
       <div class="info">
         <div class="name">Steven Chris</div>
-        <div class="job">YouTuber | Blogger</div>
+        <div class="job" style="margin-top: 5px;">YouTuber | Blogger</div><br>
         <div class="stars">
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
@@ -269,18 +264,16 @@
           <i class="far fa-star"></i>
         </div>
       </div>
-      <div class="image">
-        <img src="images/profile-2.jpeg" alt="">
-      </div>
+      
     </div>
   </div>
   <div class="box">
     <i class="fas fa-quote-left  quote"></i>
-    <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
+    <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p><br>
     <div class="content">
       <div class="info">
         <div class="name">Kristina Bellis</div>
-        <div class="job">Freelancer | Advertiser</div>
+        <div class="job" style="margin-top: 5px;">Freelancer | Advertiser</div><br>
         <div class="stars">
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
@@ -289,14 +282,14 @@
           <i class="far fa-star"></i>
         </div>
       </div>
-      <div class="image">
-        <img src="images/profile-3.jpeg" alt="">
-      </div>
+      
     </div>
   </div>
 </div>
 </div>
 <br><br><br><br><br>
+
+<p style="text-align:center ;font-weight: 600;">Copyright ©  ERROR - 404. All Rights Reserved.</p><br><br>
 <script src="home.js" defer></script>
 </body>
 </html>

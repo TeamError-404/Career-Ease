@@ -44,7 +44,7 @@ body {
   align-items: center;
   list-style: none;
   gap: 35px;
-  margin-right: 570px;
+  margin-right: 300px;
 }
 
 .navbar .links a {
@@ -173,7 +173,7 @@ body {
 
 
 .wrapper {
-  margin-top: 100px;
+  margin-top: 40px;
   margin-bottom: 100px;
   padding: 20px;
   position: relative;
@@ -495,27 +495,33 @@ body {
 
 /* Sidebar */
 .sidebar {
-  position:absolute;
+  position:fixed;
   top: 0;
   right: 0;
   height: 100%;
-  width: 250px;
+  width: 260px;
   background: #f9f9f9;
   padding: 15px 10px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease;
+  z-index: 1000;
+  
 }
 .sidebar.close {
-  width: calc(55px + 20px);
+  width: calc(55px + 15px);
 }
 .logo_items {
-  gap: 8px;
+  gap: 15px;
 }
 .logo_name {
-  font-size: 22px;
+  font-size: 24px;
   color: #333;
   font-weight: 500px;
   transition: all 0.3s ease;
+  text-decoration: none;
+}
+.logo_items a:hover{
+  color: #1aa5bd;
 }
 .sidebar.close .logo_name,
 .sidebar.close #lock-icon,
@@ -540,7 +546,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 20px;
   overflow-y: auto;
   height: calc(100% - 82px);
 }
