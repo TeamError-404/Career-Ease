@@ -163,12 +163,13 @@ body {
   justify-content: center;
   flex-direction: column;
   min-height: 8vh;
-  background: white;
+  background: aliceblue;
   margin-top: -30px;
 
 }
 .slider h2{
   margin-left: -940px;
+  margin-top: 25px;
 }
 
 
@@ -257,6 +258,7 @@ body {
 /* CARDS */
 .cards{
   position:absolute;
+  background-color: aliceblue;
 }
 .cards h2{
   margin-left: 160px;
@@ -276,7 +278,7 @@ body {
     margin-left: 150px;
     padding: 20px;
     gap: 20px;
-    background: #f1f1f359;
+    background: aliceblue;
 }
 
 .card-list .card-item {
@@ -396,6 +398,11 @@ body {
 
 /* TESTIMONIALS */
 
+.testimonial{
+  background-color: aliceblue;
+  margin-top: -70px;
+}
+
 .wrapper-test{
   max-width: 1200px;
   margin: auto;
@@ -407,6 +414,7 @@ body {
   margin-top: 50px;
   margin-left: 130px;
   margin-bottom: 200px;
+ 
 }
 .wrapper-test .box{
   background: #fff;
