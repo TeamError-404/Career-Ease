@@ -36,10 +36,10 @@ $con = mysqli_connect("localhost","root","","register") or die('not found');
     <section class="wrapper">
       <div class="form signup">
         <header>Signup</header>
-        <form action="#">
-          <input type="text" placeholder="Full name" required />
-          <input type="text" placeholder="m@gmail.com" required />
-          <input type="password" placeholder="Password" required />
+        <form method="POST">
+          <input type="text" name="name" placeholder="Full name" required />
+          <input type="text" name="id" placeholder="m@gmail.com" required />
+          <input type="password" name="pass" placeholder="Password" required />
           <div class="checkbox">
             <input type="checkbox" id="signupCheck" />
             <label for="signupCheck">I accept all <span style="color: rgb(43, 95, 227);"> <b>terms & conditions.</b></span></label>
