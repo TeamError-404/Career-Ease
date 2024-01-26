@@ -44,11 +44,12 @@ body {
   align-items: center;
   list-style: none;
   gap: 35px;
-  margin-right: 300px;
+  margin-right: 280px;
 }
 
 .navbar .links a {
-  font-weight: 500;
+  font-weight: 600;
+  font-size: large;
   text-decoration: none;
   color: black;
   padding: 10px 0;
@@ -283,8 +284,8 @@ body {
 
 .card-list .card-item {
     background: #fff;
-    padding: 26px;
-    border-radius: 8px;
+    padding: 18px;
+    border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
     list-style: none;
     cursor: pointer;
@@ -295,13 +296,6 @@ body {
 
 .card-list .card-item:hover {
     border: 2px solid #000;
-}
-
-.card-list .card-item img {
-    width: 100%;
-    aspect-ratio: 16/9;
-    border-radius: 8px;
-    object-fit: cover;
 }
 
 .card-list span {
@@ -355,45 +349,6 @@ body {
     color: #fff; 
 }
 
-.slide-button {
-  position: absolute;
-  top: 50%;
-  outline: none;
-  border: none;
-  height: 50px;
-  width: 50px;
-  z-index: 5;
-  color: #fff;
-  display: flex;
-  cursor: pointer;
-  font-size: 2.2rem;
-  background: #000;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  transform: translateY(-50%);
-}
-
-.slide-button:hover {
-  background: #404040;
-}
-
-.slide-button#prev-slide {
-  left: -25px;
-  display: none;
-}
-
-@media (max-width: 1200px) {
-    .card-list .card-item {
-        padding: 15px;
-    }
-}
-
-@media screen and (max-width: 980px) {
-    .card-list {
-        margin: 0 auto;
-    }
-}
 
 
 /* TESTIMONIALS */
@@ -521,6 +476,7 @@ body {
 }
 .logo_items {
   gap: 15px;
+  margin-bottom: 15px;
 }
 .logo_name {
   font-size: 24px;
