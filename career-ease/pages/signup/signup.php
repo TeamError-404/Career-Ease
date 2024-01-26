@@ -1,3 +1,27 @@
+<?php
+  
+  session_start();
+  $user_name="";
+  $email="";
+  $password="";
+  
+$con = mysqli_connect("localhost","root","","register") or die('not found');
+  if($_SERVER['REQUEST_METHOD']=="POST")
+  {
+    $user_name=$_POST['name'];
+    $email=$_POST['id'];
+    $password=$_POST['pass'];
+  }
+  if(!empty($user_name) && !empty($password) && !empty($email))
+  {
+    $query= "insert into signup(name , id ,pass) values ('$user_name' , '$email' , '$password')";
+
+    mysqli_query ( $con , $query );
+    echo "<script type ='text/javascript'> alert('successfully register') </script>";
+  }
+  
+    
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
