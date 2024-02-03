@@ -1,3 +1,33 @@
+<?php
+  
+  session_start();
+
+  
+$con = mysqli_connect("localhost","root","","register") or die('not found');
+  if($_SERVER['REQUEST_METHOD']=="POSTIT")
+  {
+    $email=$_POST['id'];
+    $password=$_POST['pass'];
+if (!empty($password) && !empty($email))
+{ 
+  $query="select * from where id= '$email' limit 1";
+  $result=mysqli_query($con,$query);
+  if($result)
+  {
+    if($result && mysqli_num_rows($result)>0)
+    {
+       $user_data=mysqli_fetch_assoc($result);
+
+       if ($user_data['pass'] ==  $password)
+       {
+        header("Location: index.html");
+       }
+    }
+  }
+  }
+
+  mysqli_query ( $con , $query );
+ ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,9 +42,9 @@
     <section class="wrapper">
       <div class="form signup">
         <header>Login</header>
-        <form action="#">
-          <input type="text" placeholder="m@gmail.com" required />
-          <input type="password" placeholder="Password" required />
+        <form action="#" method="POST">
+          <input type="text" name ="id" placeholder="m@gmail.com" required />
+          <input type="password" name="pass" placeholder="Password" required />
           <a href="#">Forgot password?</a>
           <button type="submit" >Login</button>
         </form>
